@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032220AC26773A33004B6572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032220AB26773A33004B6572 /* AppDelegate.swift */; };
+		032220AE26773A33004B6572 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032220AD26773A33004B6572 /* SceneDelegate.swift */; };
+		032220B026773A33004B6572 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032220AF26773A33004B6572 /* ViewController.swift */; };
+		032220B326773A33004B6572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032220B126773A33004B6572 /* Main.storyboard */; };
+		032220B526773A35004B6572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032220B426773A35004B6572 /* Assets.xcassets */; };
+		032220B826773A35004B6572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032220B626773A35004B6572 /* LaunchScreen.storyboard */; };
+		032220C326773A35004B6572 /* CoinHako_ViperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032220C226773A35004B6572 /* CoinHako_ViperTests.swift */; };
+		032220CE26773A36004B6572 /* CoinHako_ViperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032220CD26773A36004B6572 /* CoinHako_ViperUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		032220BF26773A35004B6572 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032220A026773A33004B6572 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 032220A726773A33004B6572;
+			remoteInfo = CoinHako_Viper;
+		};
+		032220CA26773A36004B6572 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032220A026773A33004B6572 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 032220A726773A33004B6572;
+			remoteInfo = CoinHako_Viper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		032220A826773A33004B6572 /* CoinHako_Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinHako_Viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		032220AB26773A33004B6572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		032220AD26773A33004B6572 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		032220AF26773A33004B6572 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		032220B226773A33004B6572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		032220B426773A35004B6572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		032220B726773A35004B6572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		032220B926773A35004B6572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		032220BE26773A35004B6572 /* CoinHako_ViperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinHako_ViperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		032220C226773A35004B6572 /* CoinHako_ViperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinHako_ViperTests.swift; sourceTree = "<group>"; };
+		032220C426773A35004B6572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		032220C926773A36004B6572 /* CoinHako_ViperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinHako_ViperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		032220CD26773A36004B6572 /* CoinHako_ViperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinHako_ViperUITests.swift; sourceTree = "<group>"; };
+		032220CF26773A36004B6572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		032220A526773A33004B6572 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032220BB26773A35004B6572 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032220C626773A36004B6572 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0322209F26773A33004B6572 = {
+			isa = PBXGroup;
+			children = (
+				032220AA26773A33004B6572 /* CoinHako_Viper */,
+				032220C126773A35004B6572 /* CoinHako_ViperTests */,
+				032220CC26773A36004B6572 /* CoinHako_ViperUITests */,
+				032220A926773A33004B6572 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		032220A926773A33004B6572 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				032220A826773A33004B6572 /* CoinHako_Viper.app */,
+				032220BE26773A35004B6572 /* CoinHako_ViperTests.xctest */,
+				032220C926773A36004B6572 /* CoinHako_ViperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		032220AA26773A33004B6572 /* CoinHako_Viper */ = {
+			isa = PBXGroup;
+			children = (
+				032220AB26773A33004B6572 /* AppDelegate.swift */,
+				032220AD26773A33004B6572 /* SceneDelegate.swift */,
+				032220AF26773A33004B6572 /* ViewController.swift */,
+				032220B126773A33004B6572 /* Main.storyboard */,
+				032220B426773A35004B6572 /* Assets.xcassets */,
+				032220B626773A35004B6572 /* LaunchScreen.storyboard */,
+				032220B926773A35004B6572 /* Info.plist */,
+			);
+			path = CoinHako_Viper;
+			sourceTree = "<group>";
+		};
+		032220C126773A35004B6572 /* CoinHako_ViperTests */ = {
+			isa = PBXGroup;
+			children = (
+				032220C226773A35004B6572 /* CoinHako_ViperTests.swift */,
+				032220C426773A35004B6572 /* Info.plist */,
+			);
+			path = CoinHako_ViperTests;
+			sourceTree = "<group>";
+		};
+		032220CC26773A36004B6572 /* CoinHako_ViperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				032220CD26773A36004B6572 /* CoinHako_ViperUITests.swift */,
+				032220CF26773A36004B6572 /* Info.plist */,
+			);
+			path = CoinHako_ViperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		032220A726773A33004B6572 /* CoinHako_Viper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032220D226773A36004B6572 /* Build configuration list for PBXNativeTarget "CoinHako_Viper" */;
+			buildPhases = (
+				032220A426773A33004B6572 /* Sources */,
+				032220A526773A33004B6572 /* Frameworks */,
+				032220A626773A33004B6572 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinHako_Viper;
+			productName = CoinHako_Viper;
+			productReference = 032220A826773A33004B6572 /* CoinHako_Viper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		032220BD26773A35004B6572 /* CoinHako_ViperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032220D526773A36004B6572 /* Build configuration list for PBXNativeTarget "CoinHako_ViperTests" */;
+			buildPhases = (
+				032220BA26773A35004B6572 /* Sources */,
+				032220BB26773A35004B6572 /* Frameworks */,
+				032220BC26773A35004B6572 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				032220C026773A35004B6572 /* PBXTargetDependency */,
+			);
+			name = CoinHako_ViperTests;
+			productName = CoinHako_ViperTests;
+			productReference = 032220BE26773A35004B6572 /* CoinHako_ViperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		032220C826773A36004B6572 /* CoinHako_ViperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032220D826773A36004B6572 /* Build configuration list for PBXNativeTarget "CoinHako_ViperUITests" */;
+			buildPhases = (
+				032220C526773A36004B6572 /* Sources */,
+				032220C626773A36004B6572 /* Frameworks */,
+				032220C726773A36004B6572 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				032220CB26773A36004B6572 /* PBXTargetDependency */,
+			);
+			name = CoinHako_ViperUITests;
+			productName = CoinHako_ViperUITests;
+			productReference = 032220C926773A36004B6572 /* CoinHako_ViperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		032220A026773A33004B6572 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					032220A726773A33004B6572 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					032220BD26773A35004B6572 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 032220A726773A33004B6572;
+					};
+					032220C826773A36004B6572 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 032220A726773A33004B6572;
+					};
+				};
+			};
+			buildConfigurationList = 032220A326773A33004B6572 /* Build configuration list for PBXProject "CoinHako_Viper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0322209F26773A33004B6572;
+			productRefGroup = 032220A926773A33004B6572 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				032220A726773A33004B6572 /* CoinHako_Viper */,
+				032220BD26773A35004B6572 /* CoinHako_ViperTests */,
+				032220C826773A36004B6572 /* CoinHako_ViperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		032220A626773A33004B6572 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032220B826773A35004B6572 /* LaunchScreen.storyboard in Resources */,
+				032220B526773A35004B6572 /* Assets.xcassets in Resources */,
+				032220B326773A33004B6572 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032220BC26773A35004B6572 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032220C726773A36004B6572 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		032220A426773A33004B6572 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032220B026773A33004B6572 /* ViewController.swift in Sources */,
+				032220AC26773A33004B6572 /* AppDelegate.swift in Sources */,
+				032220AE26773A33004B6572 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032220BA26773A35004B6572 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032220C326773A35004B6572 /* CoinHako_ViperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032220C526773A36004B6572 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032220CE26773A36004B6572 /* CoinHako_ViperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		032220C026773A35004B6572 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 032220A726773A33004B6572 /* CoinHako_Viper */;
+			targetProxy = 032220BF26773A35004B6572 /* PBXContainerItemProxy */;
+		};
+		032220CB26773A36004B6572 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 032220A726773A33004B6572 /* CoinHako_Viper */;
+			targetProxy = 032220CA26773A36004B6572 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		032220B126773A33004B6572 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				032220B226773A33004B6572 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		032220B626773A35004B6572 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				032220B726773A35004B6572 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		032220D026773A36004B6572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		032220D126773A36004B6572 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		032220D326773A36004B6572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoinHako_Viper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dat.hoang.CoinHako-Viper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		032220D426773A36004B6572 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoinHako_Viper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dat.hoang.CoinHako-Viper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		032220D626773A36004B6572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoinHako_ViperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dat.hoang.CoinHako-ViperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinHako_Viper.app/CoinHako_Viper";
+			};
+			name = Debug;
+		};
+		032220D726773A36004B6572 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoinHako_ViperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dat.hoang.CoinHako-ViperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinHako_Viper.app/CoinHako_Viper";
+			};
+			name = Release;
+		};
+		032220D926773A36004B6572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoinHako_ViperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dat.hoang.CoinHako-ViperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoinHako_Viper;
+			};
+			name = Debug;
+		};
+		032220DA26773A36004B6572 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoinHako_ViperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dat.hoang.CoinHako-ViperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoinHako_Viper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		032220A326773A33004B6572 /* Build configuration list for PBXProject "CoinHako_Viper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032220D026773A36004B6572 /* Debug */,
+				032220D126773A36004B6572 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032220D226773A36004B6572 /* Build configuration list for PBXNativeTarget "CoinHako_Viper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032220D326773A36004B6572 /* Debug */,
+				032220D426773A36004B6572 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032220D526773A36004B6572 /* Build configuration list for PBXNativeTarget "CoinHako_ViperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032220D626773A36004B6572 /* Debug */,
+				032220D726773A36004B6572 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032220D826773A36004B6572 /* Build configuration list for PBXNativeTarget "CoinHako_ViperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032220D926773A36004B6572 /* Debug */,
+				032220DA26773A36004B6572 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 032220A026773A33004B6572 /* Project object */;
+}
