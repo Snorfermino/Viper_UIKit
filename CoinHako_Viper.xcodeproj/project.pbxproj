@@ -3,18 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		032220AC26773A33004B6572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032220AB26773A33004B6572 /* AppDelegate.swift */; };
 		032220AE26773A33004B6572 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032220AD26773A33004B6572 /* SceneDelegate.swift */; };
-		032220B026773A33004B6572 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032220AF26773A33004B6572 /* ViewController.swift */; };
+		032220B026773A33004B6572 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032220AF26773A33004B6572 /* WalletViewController.swift */; };
 		032220B326773A33004B6572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032220B126773A33004B6572 /* Main.storyboard */; };
 		032220B526773A35004B6572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032220B426773A35004B6572 /* Assets.xcassets */; };
 		032220B826773A35004B6572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032220B626773A35004B6572 /* LaunchScreen.storyboard */; };
 		032220C326773A35004B6572 /* CoinHako_ViperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032220C226773A35004B6572 /* CoinHako_ViperTests.swift */; };
 		032220CE26773A36004B6572 /* CoinHako_ViperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032220CD26773A36004B6572 /* CoinHako_ViperUITests.swift */; };
+		032220E026773B26004B6572 /* CryptoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032220DF26773B26004B6572 /* CryptoCell.swift */; };
+		032220EC26773FA3004B6572 /* WalletInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032220EB26773FA3004B6572 /* WalletInteractor.swift */; };
+		032220F426773FAF004B6572 /* WalletPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032220F326773FAF004B6572 /* WalletPresenter.swift */; };
+		0322210D26786FB4004B6572 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322210C26786FB4004B6572 /* APIClient.swift */; };
+		0322211626786FEA004B6572 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322211526786FEA004B6572 /* Crypto.swift */; };
+		CE8F88C0938D37477AAE81D9 /* Pods_CoinHako_Viper_CoinHako_ViperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BEADF617E77AC5A11E2EDA /* Pods_CoinHako_Viper_CoinHako_ViperUITests.framework */; };
+		D6BAD591A93018A00578BB34 /* Pods_CoinHako_ViperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A961D141C0E1AEBBF4BE805F /* Pods_CoinHako_ViperTests.framework */; };
+		FBA816A9DD2E252367AEBD2F /* Pods_CoinHako_Viper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88598C405B76A6C42620420B /* Pods_CoinHako_Viper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +46,7 @@
 		032220A826773A33004B6572 /* CoinHako_Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinHako_Viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		032220AB26773A33004B6572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		032220AD26773A33004B6572 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		032220AF26773A33004B6572 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		032220AF26773A33004B6572 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		032220B226773A33004B6572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		032220B426773A35004B6572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		032220B726773A35004B6572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +57,20 @@
 		032220C926773A36004B6572 /* CoinHako_ViperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinHako_ViperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		032220CD26773A36004B6572 /* CoinHako_ViperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinHako_ViperUITests.swift; sourceTree = "<group>"; };
 		032220CF26773A36004B6572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		032220DF26773B26004B6572 /* CryptoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCell.swift; sourceTree = "<group>"; };
+		032220EB26773FA3004B6572 /* WalletInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletInteractor.swift; sourceTree = "<group>"; };
+		032220F326773FAF004B6572 /* WalletPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletPresenter.swift; sourceTree = "<group>"; };
+		0322210C26786FB4004B6572 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		0322211526786FEA004B6572 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		5129439F97C4CBE678F039E8 /* Pods-CoinHako_Viper-CoinHako_ViperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinHako_Viper-CoinHako_ViperUITests.debug.xcconfig"; path = "Target Support Files/Pods-CoinHako_Viper-CoinHako_ViperUITests/Pods-CoinHako_Viper-CoinHako_ViperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		88598C405B76A6C42620420B /* Pods_CoinHako_Viper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinHako_Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96F219AE1241175F56346543 /* Pods-CoinHako_Viper-CoinHako_ViperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinHako_Viper-CoinHako_ViperUITests.release.xcconfig"; path = "Target Support Files/Pods-CoinHako_Viper-CoinHako_ViperUITests/Pods-CoinHako_Viper-CoinHako_ViperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9BEF0569FF9AB00976E28EF5 /* Pods-CoinHako_Viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinHako_Viper.debug.xcconfig"; path = "Target Support Files/Pods-CoinHako_Viper/Pods-CoinHako_Viper.debug.xcconfig"; sourceTree = "<group>"; };
+		A313240A2E26A44D27BBA8A3 /* Pods-CoinHako_ViperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinHako_ViperTests.release.xcconfig"; path = "Target Support Files/Pods-CoinHako_ViperTests/Pods-CoinHako_ViperTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4BEADF617E77AC5A11E2EDA /* Pods_CoinHako_Viper_CoinHako_ViperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinHako_Viper_CoinHako_ViperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A569542CEC31ACF956ACFDE7 /* Pods-CoinHako_Viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinHako_Viper.release.xcconfig"; path = "Target Support Files/Pods-CoinHako_Viper/Pods-CoinHako_Viper.release.xcconfig"; sourceTree = "<group>"; };
+		A961D141C0E1AEBBF4BE805F /* Pods_CoinHako_ViperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinHako_ViperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06F4F02074E9D21AC6B67A0 /* Pods-CoinHako_ViperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinHako_ViperTests.debug.xcconfig"; path = "Target Support Files/Pods-CoinHako_ViperTests/Pods-CoinHako_ViperTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA816A9DD2E252367AEBD2F /* Pods_CoinHako_Viper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6BAD591A93018A00578BB34 /* Pods_CoinHako_ViperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8F88C0938D37477AAE81D9 /* Pods_CoinHako_Viper_CoinHako_ViperUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +108,8 @@
 				032220C126773A35004B6572 /* CoinHako_ViperTests */,
 				032220CC26773A36004B6572 /* CoinHako_ViperUITests */,
 				032220A926773A33004B6572 /* Products */,
+				CF528CA3C9A4E508B6EAC068 /* Pods */,
+				37E31C0759E3CE005A4F8704 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +126,12 @@
 		032220AA26773A33004B6572 /* CoinHako_Viper */ = {
 			isa = PBXGroup;
 			children = (
+				0322211426786FE0004B6572 /* Entity */,
+				0322210B26786FA5004B6572 /* API */,
+				032220EA26773F8A004B6572 /* WalletModule */,
+				032220DE26773B19004B6572 /* CustomView */,
 				032220AB26773A33004B6572 /* AppDelegate.swift */,
 				032220AD26773A33004B6572 /* SceneDelegate.swift */,
-				032220AF26773A33004B6572 /* ViewController.swift */,
 				032220B126773A33004B6572 /* Main.storyboard */,
 				032220B426773A35004B6572 /* Assets.xcassets */,
 				032220B626773A35004B6572 /* LaunchScreen.storyboard */,
@@ -128,6 +158,63 @@
 			path = CoinHako_ViperUITests;
 			sourceTree = "<group>";
 		};
+		032220DE26773B19004B6572 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				032220DF26773B26004B6572 /* CryptoCell.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		032220EA26773F8A004B6572 /* WalletModule */ = {
+			isa = PBXGroup;
+			children = (
+				032220AF26773A33004B6572 /* WalletViewController.swift */,
+				032220EB26773FA3004B6572 /* WalletInteractor.swift */,
+				032220F326773FAF004B6572 /* WalletPresenter.swift */,
+			);
+			path = WalletModule;
+			sourceTree = "<group>";
+		};
+		0322210B26786FA5004B6572 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0322210C26786FB4004B6572 /* APIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		0322211426786FE0004B6572 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0322211526786FEA004B6572 /* Crypto.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		37E31C0759E3CE005A4F8704 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88598C405B76A6C42620420B /* Pods_CoinHako_Viper.framework */,
+				A4BEADF617E77AC5A11E2EDA /* Pods_CoinHako_Viper_CoinHako_ViperUITests.framework */,
+				A961D141C0E1AEBBF4BE805F /* Pods_CoinHako_ViperTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF528CA3C9A4E508B6EAC068 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BEF0569FF9AB00976E28EF5 /* Pods-CoinHako_Viper.debug.xcconfig */,
+				A569542CEC31ACF956ACFDE7 /* Pods-CoinHako_Viper.release.xcconfig */,
+				5129439F97C4CBE678F039E8 /* Pods-CoinHako_Viper-CoinHako_ViperUITests.debug.xcconfig */,
+				96F219AE1241175F56346543 /* Pods-CoinHako_Viper-CoinHako_ViperUITests.release.xcconfig */,
+				F06F4F02074E9D21AC6B67A0 /* Pods-CoinHako_ViperTests.debug.xcconfig */,
+				A313240A2E26A44D27BBA8A3 /* Pods-CoinHako_ViperTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 032220D226773A36004B6572 /* Build configuration list for PBXNativeTarget "CoinHako_Viper" */;
 			buildPhases = (
+				6D77956C535DDF424821CE34 /* [CP] Check Pods Manifest.lock */,
 				032220A426773A33004B6572 /* Sources */,
 				032220A526773A33004B6572 /* Frameworks */,
 				032220A626773A33004B6572 /* Resources */,
+				75F43BAA8A2A09985776467C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +241,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 032220D526773A36004B6572 /* Build configuration list for PBXNativeTarget "CoinHako_ViperTests" */;
 			buildPhases = (
+				16BCBB7F790CAC2483747098 /* [CP] Check Pods Manifest.lock */,
 				032220BA26773A35004B6572 /* Sources */,
 				032220BB26773A35004B6572 /* Frameworks */,
 				032220BC26773A35004B6572 /* Resources */,
@@ -170,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 032220D826773A36004B6572 /* Build configuration list for PBXNativeTarget "CoinHako_ViperUITests" */;
 			buildPhases = (
+				2261CBFA7194BC3F4FE6AE84 /* [CP] Check Pods Manifest.lock */,
 				032220C526773A36004B6572 /* Sources */,
 				032220C626773A36004B6572 /* Frameworks */,
 				032220C726773A36004B6572 /* Resources */,
+				031CF4997CC01C18220AE2B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +345,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		031CF4997CC01C18220AE2B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinHako_Viper-CoinHako_ViperUITests/Pods-CoinHako_Viper-CoinHako_ViperUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinHako_Viper-CoinHako_ViperUITests/Pods-CoinHako_Viper-CoinHako_ViperUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoinHako_Viper-CoinHako_ViperUITests/Pods-CoinHako_Viper-CoinHako_ViperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16BCBB7F790CAC2483747098 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinHako_ViperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2261CBFA7194BC3F4FE6AE84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinHako_Viper-CoinHako_ViperUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D77956C535DDF424821CE34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinHako_Viper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75F43BAA8A2A09985776467C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinHako_Viper/Pods-CoinHako_Viper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinHako_Viper/Pods-CoinHako_Viper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoinHako_Viper/Pods-CoinHako_Viper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		032220A426773A33004B6572 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				032220B026773A33004B6572 /* ViewController.swift in Sources */,
+				0322211626786FEA004B6572 /* Crypto.swift in Sources */,
+				032220E026773B26004B6572 /* CryptoCell.swift in Sources */,
+				0322210D26786FB4004B6572 /* APIClient.swift in Sources */,
+				032220EC26773FA3004B6572 /* WalletInteractor.swift in Sources */,
+				032220B026773A33004B6572 /* WalletViewController.swift in Sources */,
 				032220AC26773A33004B6572 /* AppDelegate.swift in Sources */,
 				032220AE26773A33004B6572 /* SceneDelegate.swift in Sources */,
+				032220F426773FAF004B6572 /* WalletPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +633,7 @@
 		};
 		032220D326773A36004B6572 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BEF0569FF9AB00976E28EF5 /* Pods-CoinHako_Viper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +652,7 @@
 		};
 		032220D426773A36004B6572 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A569542CEC31ACF956ACFDE7 /* Pods-CoinHako_Viper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +671,7 @@
 		};
 		032220D626773A36004B6572 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F06F4F02074E9D21AC6B67A0 /* Pods-CoinHako_ViperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +693,7 @@
 		};
 		032220D726773A36004B6572 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A313240A2E26A44D27BBA8A3 /* Pods-CoinHako_ViperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +715,7 @@
 		};
 		032220D926773A36004B6572 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5129439F97C4CBE678F039E8 /* Pods-CoinHako_Viper-CoinHako_ViperUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +735,7 @@
 		};
 		032220DA26773A36004B6572 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96F219AE1241175F56346543 /* Pods-CoinHako_Viper-CoinHako_ViperUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
