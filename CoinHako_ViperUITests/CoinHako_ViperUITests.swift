@@ -22,21 +22,41 @@ class CoinHako_ViperUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func testSearchBar() throws {
         let app = XCUIApplication()
         app.launch()
+        // Wait for UI to update
+        sleep(3)
+        let searchTextField = app.textFields["searchTextField"]
+        let listView = app.tables
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let notFilteredCount = listView.cells.count
+        searchTextField.tap()
+        searchTextField.typeText("B")
+        searchTextField.typeText("T")
+        searchTextField.typeText("C")
+        // Wait for thorrtle to trigger crypto filtering
+        sleep(1)
+        XCTAssertNotEqual(notFilteredCount, listView.cells.count)
+        let clearButton = searchTextField.buttons.firstMatch
+        clearButton.tap()
+        XCTAssertEqual(searchTextField.label, "")
+        sleep(1)
+        XCTAssertEqual(notFilteredCount, listView.cells.count)
     }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+    
+    func testPriceIsUpdate() {
+        let app = XCUIApplication()
+        app.launch()
+        let searchTextField = app.textFields["searchTextField"]
+        let listView = app.tables["cryptoList"]
+        searchTextField.tap()
+        searchTextField.typeText("B")
+        searchTextField.typeText("T")
+        searchTextField.typeText("C")
+        sleep(1)
+        let first = listView.cells["CryptoCell"].staticTexts["buyPrice"].label
+        sleep(35)
+        XCTAssertFalse(first == listView.cells["CryptoCell"].staticTexts["buyPrice"].label)
     }
 }

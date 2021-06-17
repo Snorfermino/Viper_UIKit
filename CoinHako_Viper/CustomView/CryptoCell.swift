@@ -13,6 +13,15 @@ class CryptoCell: UITableViewCell {
     @IBOutlet weak var buyLb: UILabel!
     @IBOutlet weak var sellLb: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        backgroundColor = .black
+    }
     
-    
+    func setupCell(with crypto: Crypto) {
+        nameLb.text = crypto.name
+        baseLb.text = crypto.base
+        buyLb.text = crypto.buy
+        sellLb.text = crypto.sell
+    }
 }

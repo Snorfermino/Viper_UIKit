@@ -11,74 +11,110 @@
         <!--Wallet View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WalletViewController" customModule="CoinHako_Viper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WalletViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="WalletViewController" customModule="CoinHako_Viper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KER-kx-sj4">
-                                <rect key="frame" x="0.0" y="112" width="414" height="750"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KER-kx-sj4">
+                                <rect key="frame" x="0.0" y="89" width="414" height="773"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CryptoCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="130" id="Su4-0B-VFa" customClass="CryptoCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CryptoCell" rowHeight="130" id="Su4-0B-VFa" customClass="CryptoCell" customModule="CoinHako_Viper" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Su4-0B-VFa" id="Y21-Kp-Dm8">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjS-2o-gSP">
-                                                    <rect key="frame" x="20" y="33" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjS-2o-gSP">
+                                                    <rect key="frame" x="28" y="45.5" width="60" height="39"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <color key="textColor" systemColor="systemGreenColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20Q-Zv-uL7">
-                                                    <rect key="frame" x="20" y="71" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="20Q-Zv-uL7">
+                                                    <rect key="frame" x="28" y="84.5" width="44.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" systemColor="systemGreenColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ew3-aD-aZc">
-                                                    <rect key="frame" x="223" y="33" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rv4-ZW-KPF">
+                                                    <rect key="frame" x="329" y="23" width="57" height="84"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="sellPrice"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <color key="textColor" systemColor="systemRedColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uss-j7-nge">
-                                                    <rect key="frame" x="336" y="33" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdx-XK-wQY">
-                                                    <rect key="frame" x="223" y="71" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rv4-ZW-KPF">
-                                                    <rect key="frame" x="336" y="71" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdx-XK-wQY">
+                                                    <rect key="frame" x="248" y="23" width="57" height="84"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="buyPrice"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <color key="textColor" systemColor="systemGreenColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sjS-2o-gSP" firstAttribute="leading" secondItem="Y21-Kp-Dm8" secondAttribute="leadingMargin" constant="8" id="4Zr-VD-LCh"/>
+                                                <constraint firstItem="sjS-2o-gSP" firstAttribute="centerY" secondItem="Y21-Kp-Dm8" secondAttribute="centerY" id="9Q6-Eh-Bke"/>
+                                                <constraint firstItem="Gdx-XK-wQY" firstAttribute="centerY" secondItem="rv4-ZW-KPF" secondAttribute="centerY" id="DdR-bQ-Pav"/>
+                                                <constraint firstItem="Gdx-XK-wQY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sjS-2o-gSP" secondAttribute="trailing" constant="12" id="JAU-px-oP7"/>
+                                                <constraint firstItem="sjS-2o-gSP" firstAttribute="top" secondItem="Y21-Kp-Dm8" secondAttribute="topMargin" constant="34.5" id="MUe-Zo-nxp"/>
+                                                <constraint firstItem="20Q-Zv-uL7" firstAttribute="top" secondItem="sjS-2o-gSP" secondAttribute="bottom" id="TU8-ZO-MrG"/>
+                                                <constraint firstItem="rv4-ZW-KPF" firstAttribute="leading" secondItem="Gdx-XK-wQY" secondAttribute="trailing" constant="24" id="V79-lw-hHA"/>
+                                                <constraint firstItem="20Q-Zv-uL7" firstAttribute="leading" secondItem="sjS-2o-gSP" secondAttribute="leading" id="dSQ-eL-Hti"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="rv4-ZW-KPF" secondAttribute="trailing" constant="8" id="t0h-1V-mpY"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Gdx-XK-wQY" secondAttribute="bottom" constant="12" id="w40-HP-aIy"/>
+                                                <constraint firstItem="Gdx-XK-wQY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="20Q-Zv-uL7" secondAttribute="trailing" constant="12" id="wcq-Fc-Qxh"/>
+                                                <constraint firstItem="rv4-ZW-KPF" firstAttribute="centerY" secondItem="Y21-Kp-Dm8" secondAttribute="centerY" id="xfH-Qf-ial"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="rv4-ZW-KPF" secondAttribute="bottom" constant="12" id="y5F-rS-zd8"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="CryptoCell">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <connections>
+                                            <outlet property="baseLb" destination="sjS-2o-gSP" id="F0d-K9-XbL"/>
+                                            <outlet property="buyLb" destination="Gdx-XK-wQY" id="1hP-Vc-16y"/>
+                                            <outlet property="nameLb" destination="20Q-Zv-uL7" id="BjU-8a-onU"/>
+                                            <outlet property="sellLb" destination="rv4-ZW-KPF" id="H52-cc-eJp"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ipS-bs-m2Q"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="MvZ-da-N0j"/>
+                                </connections>
                             </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search..." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CLx-Nk-VYO">
+                                <rect key="frame" x="20" y="44" width="374" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="searchTextField"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="hh6-xj-YS5"/>
+                                </constraints>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="KER-kx-sj4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="66W-le-IX9"/>
+                            <constraint firstItem="CLx-Nk-VYO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6RY-lE-27H"/>
+                            <constraint firstItem="KER-kx-sj4" firstAttribute="top" secondItem="CLx-Nk-VYO" secondAttribute="bottom" id="8Ko-4K-ZZf"/>
+                            <constraint firstItem="CLx-Nk-VYO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="BSB-JS-nPW"/>
+                            <constraint firstItem="KER-kx-sj4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="BaN-N8-tFB"/>
+                            <constraint firstItem="KER-kx-sj4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W1x-gA-NXe"/>
+                            <constraint firstItem="CLx-Nk-VYO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fof-YT-tWl"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="KER-kx-sj4" id="tRa-qH-fS8"/>
+                        <outlet property="textField" destination="CLx-Nk-VYO" id="6Oy-l6-2cD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,8 +122,14 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

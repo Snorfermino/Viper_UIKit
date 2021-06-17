@@ -20,6 +20,8 @@
 		032220F426773FAF004B6572 /* WalletPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032220F326773FAF004B6572 /* WalletPresenter.swift */; };
 		0322210D26786FB4004B6572 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322210C26786FB4004B6572 /* APIClient.swift */; };
 		0322211626786FEA004B6572 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322211526786FEA004B6572 /* Crypto.swift */; };
+		0322211F2679B4BD004B6572 /* WalletRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322211E2679B4BD004B6572 /* WalletRouter.swift */; };
+		0322212C267B19FB004B6572 /* Throttle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322212B267B19FA004B6572 /* Throttle.swift */; };
 		CE8F88C0938D37477AAE81D9 /* Pods_CoinHako_Viper_CoinHako_ViperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BEADF617E77AC5A11E2EDA /* Pods_CoinHako_Viper_CoinHako_ViperUITests.framework */; };
 		D6BAD591A93018A00578BB34 /* Pods_CoinHako_ViperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A961D141C0E1AEBBF4BE805F /* Pods_CoinHako_ViperTests.framework */; };
 		FBA816A9DD2E252367AEBD2F /* Pods_CoinHako_Viper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88598C405B76A6C42620420B /* Pods_CoinHako_Viper.framework */; };
@@ -62,6 +64,8 @@
 		032220F326773FAF004B6572 /* WalletPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletPresenter.swift; sourceTree = "<group>"; };
 		0322210C26786FB4004B6572 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		0322211526786FEA004B6572 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		0322211E2679B4BD004B6572 /* WalletRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRouter.swift; sourceTree = "<group>"; };
+		0322212B267B19FA004B6572 /* Throttle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttle.swift; sourceTree = "<group>"; };
 		5129439F97C4CBE678F039E8 /* Pods-CoinHako_Viper-CoinHako_ViperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinHako_Viper-CoinHako_ViperUITests.debug.xcconfig"; path = "Target Support Files/Pods-CoinHako_Viper-CoinHako_ViperUITests/Pods-CoinHako_Viper-CoinHako_ViperUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		88598C405B76A6C42620420B /* Pods_CoinHako_Viper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinHako_Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F219AE1241175F56346543 /* Pods-CoinHako_Viper-CoinHako_ViperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinHako_Viper-CoinHako_ViperUITests.release.xcconfig"; path = "Target Support Files/Pods-CoinHako_Viper-CoinHako_ViperUITests/Pods-CoinHako_Viper-CoinHako_ViperUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 		032220AA26773A33004B6572 /* CoinHako_Viper */ = {
 			isa = PBXGroup;
 			children = (
+				0322212A267B19EB004B6572 /* Ultility */,
 				0322211426786FE0004B6572 /* Entity */,
 				0322210B26786FA5004B6572 /* API */,
 				032220EA26773F8A004B6572 /* WalletModule */,
@@ -169,6 +174,7 @@
 		032220EA26773F8A004B6572 /* WalletModule */ = {
 			isa = PBXGroup;
 			children = (
+				0322211E2679B4BD004B6572 /* WalletRouter.swift */,
 				032220AF26773A33004B6572 /* WalletViewController.swift */,
 				032220EB26773FA3004B6572 /* WalletInteractor.swift */,
 				032220F326773FAF004B6572 /* WalletPresenter.swift */,
@@ -190,6 +196,14 @@
 				0322211526786FEA004B6572 /* Crypto.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		0322212A267B19EB004B6572 /* Ultility */ = {
+			isa = PBXGroup;
+			children = (
+				0322212B267B19FA004B6572 /* Throttle.swift */,
+			);
+			path = Ultility;
 			sourceTree = "<group>";
 		};
 		37E31C0759E3CE005A4F8704 /* Frameworks */ = {
@@ -455,6 +469,8 @@
 			files = (
 				0322211626786FEA004B6572 /* Crypto.swift in Sources */,
 				032220E026773B26004B6572 /* CryptoCell.swift in Sources */,
+				0322211F2679B4BD004B6572 /* WalletRouter.swift in Sources */,
+				0322212C267B19FB004B6572 /* Throttle.swift in Sources */,
 				0322210D26786FB4004B6572 /* APIClient.swift in Sources */,
 				032220EC26773FA3004B6572 /* WalletInteractor.swift in Sources */,
 				032220B026773A33004B6572 /* WalletViewController.swift in Sources */,
@@ -639,6 +655,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoinHako_Viper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -658,6 +675,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoinHako_Viper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

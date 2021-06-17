@@ -12,7 +12,7 @@ final class APIClient {
     static let baseURL = "https://www.coinhako.com/api/v3/price/all_prices_for_mobile?counter_currency=USD"
     
     static func getCryptos() -> Promise<[Crypto]> {
-        return Promise () { promise in
+        return Promise { promise in
             Alamofire.request(URL(string: baseURL)!, method: .get).validate().responseJSON { (response) in
                 switch response.result {
                 case .failure(let error):
